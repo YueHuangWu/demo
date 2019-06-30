@@ -88,20 +88,12 @@ public class MyCrawler {
     }
 
 
-//    //main 方法入口
-//    public static void main(String[] args) {
-//        MyCrawler crawler = new MyCrawler();
-//        //crawler.crawling(new String[]{"https://www.baidu.com"});
-//        crawler.crawling(new String[]{"http://www.0319xx.com/2536_10.html"});
-//    }
-    
-
     //main 方法入口
     public static void main(String[] args) {
-    		MyCrawler crawler = new MyCrawler();
-    	crawler.crawling(new String[]{"http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%CD%BC%C6%AC&fr=ala&ala=1&alatpl=others&pos=0"});
-    	 data-objurl="http://pic37.nipic.com/20140113/8800276_184927469000_2.png"
-    			 data-thumburl="http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&amp;fm=26&amp;gp=0.jpg" 
-     
+        MyCrawler crawler = new MyCrawler();
+        //crawler.crawling(new String[]{"https://www.baidu.com"});
+        crawler.crawling(new String[]{"http://www.0319xx.com/2536_10.html"});
     }
+    
+
 }
