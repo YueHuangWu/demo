@@ -10,10 +10,14 @@ import com.etoak.crawl.util.FileTool;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Set;
 
 public class MyCrawler {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(MyCrawler.class);
 
     /**
      * 使用种子初始化 URL 队列
@@ -90,6 +94,7 @@ public class MyCrawler {
 
     //main 方法入口
     public static void main(String[] args) {
+        LOGGER.info("开始爬虫-----");
         MyCrawler crawler = new MyCrawler();
         //crawler.crawling(new String[]{"https://www.baidu.com"});
         crawler.crawling(new String[]{"http://www.0319xx.com/2536_10.html"});
